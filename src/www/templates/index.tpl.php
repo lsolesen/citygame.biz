@@ -9,6 +9,4 @@
 	<li>Vejle</li>
 </ul>
 
-
-
 <p>Prisen for et spil (2 timer) er 1600 kroner + moms.</p>
