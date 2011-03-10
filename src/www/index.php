@@ -50,6 +50,7 @@ class Citygame_Component_Root extends k_Component
     {
         $tpl = $this->template->create('wrapper');
         $data = array(
+          'title' => $this->document->title(),
           'content' => $content
         );
         return $tpl->render($this, $data);
@@ -57,6 +58,7 @@ class Citygame_Component_Root extends k_Component
 
     function renderHtml()
     {
+        $this->document->setTitle('Citygame - GPS spil med byen som ramme');
         $tpl = $this->template->create('target');
         return $tpl->render($this);
     }
@@ -73,7 +75,8 @@ class Citygame_Component_Game extends k_Component
 
     function renderHtml()
     {
-        if ($this->query('game')) {
+       $this->document->setTitle('Citygame - Vis spil'); 
+       if ($this->query('game')) {
             return new k_SeeOther('http://85.255.207.58/TheTarget3/CurentView.aspx?a=' . intval($this->query('game')));
         }
 

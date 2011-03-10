@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<title><?php e($title); ?></title>
 		<style type="text/css">
 			@import "<?php e(url('style.css')); ?>";
 		</style>
