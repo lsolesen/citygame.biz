@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-p,dd {
+p,dd, li {
     font: 12px tahoma, verdana, sans-serif
 }
 
